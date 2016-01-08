@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PlanB</string>
+    <string name="title_activity_main">PLAN B</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_di_di">DiDiActivity</string>
+    <string name="title_activity_da_da">DaDaActivity</string>
+
+    <string name="destination">招商发展中心 - 九祥岭</string>
+    <string name="checkButton">自助检票</string>
+    <string name="toDiDiButton">DIIIIII</string>
+    <string name="toDaDaButton">DAAAAAA</string>
+
+</resources>

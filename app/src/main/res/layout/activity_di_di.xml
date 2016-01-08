@@ -1,0 +1,49 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".MainActivity"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg"/>
+
+
+    <TextView
+        android:id="@+id/ticketDate"
+        android:layout_width="72dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="73dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="130dp"
+        android:background="#525252"
+        android:gravity="center"
+        android:textColor="#212121"/>
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="328dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="194dp"
+        android:background="@drawable/textview_style"
+        android:gravity="center"
+        android:text="@string/destination"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/date_text"
+        android:layout_width="328dp"
+        android:layout_height="74dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="250dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:textColor="#878787"
+        android:textSize="34sp"
+        />
+</FrameLayout>

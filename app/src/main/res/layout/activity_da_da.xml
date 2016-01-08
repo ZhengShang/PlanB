@@ -1,0 +1,224 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#242423"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="返回"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="电子票"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <com.example.planb.LicenseView
+        android:id="@+id/licenseView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/toolBar"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        app:backgroundColor="#000"
+
+        />
+
+    <ImageView
+        android:id="@+id/fillet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/licenseView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@mipmap/icon_ticket_fillet"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fillet"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/ic_bottom"
+        />
+
+    <RelativeLayout
+        android:id="@+id/center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/fillet"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/bg_center"
+        android:paddingBottom="20dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        >
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:textColor="@android:color/black"
+            android:textSize="38sp"
+            android:textStyle="bold"
+            />
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/time"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="15dp"
+            android:background="#DCDCDB"
+            />
+
+        <ImageView
+            android:id="@+id/elephant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider1"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/icon_elephant01"
+            />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider1"
+            android:layout_centerHorizontal="true"
+            android:text="饶平"
+            android:textColor="@android:color/black"
+            android:textSize="90sp"
+            android:textStyle="bold"
+            />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/elephant"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="12dp"
+            android:background="#DCDCDB"
+            />
+
+        <ImageView
+            android:id="@+id/ad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider2"
+            android:layout_marginTop="25dp"
+            android:background="@mipmap/active_btn_movie"
+            />
+
+        <TextView
+            android:id="@+id/code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/divider2"
+            android:text="7045"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/code"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="55dp"
+            android:text="验票码"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ad"
+            android:layout_alignParentRight="true"
+            android:text="132-1663-5224"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/phone"
+            android:layout_alignBottom="@id/ad"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="140dp"
+            android:text="手机号"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignLeft="@id/center"
+        android:layout_alignRight="@id/center"
+        android:layout_alignTop="@id/center"
+        android:background="#50000000"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/center"
+        android:layout_alignRight="@id/center"
+        android:layout_alignTop="@id/center"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="300dp"
+        android:background="@mipmap/icon_ticket"
+        />
+
+    <ImageView
+        android:id="@+id/ad_move"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:src="@mipmap/active_icon_movie2"
+        />
+
+
+</RelativeLayout>
